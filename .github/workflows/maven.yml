@@ -79,7 +79,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: extent-report
-        path: target/extent-reports/
+        path: reports/ExtentReports
 
     # Archive Surefire Reports for Debugging
     - name: Upload Surefire Reports
