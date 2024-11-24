@@ -26,6 +26,10 @@ jobs:
     # Build the project and install dependencies
     - name: Build and Install Dependencies
       run: mvn clean install -DskipTests
+      
+    - name: Check Dependencies
+      run: mvn dependency:tree
+
 
     # Run Automation Tests
     - name: Run Tests
