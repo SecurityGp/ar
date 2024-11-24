@@ -13,7 +13,8 @@ jobs:
 
     steps:
     # Checkout code
-    - uses: actions/checkout@v4
+    - name: Checkout Code
+      uses: actions/checkout@v4
 
     # Set up JDK
     - name: Set up JDK 17
@@ -23,17 +24,32 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # Build the project and install dependencies
-    - name: Build and Install Dependencies
+    # Install Dependencies
+    - name: Install Dependencies
       run: mvn clean install -DskipTests
       
-    - name: Check Dependencies
+    # Check Dependencies
+    - name: Check Dependency Tree
       run: mvn dependency:tree
 
+    # Set up Xvfb for Headless Mode (Required for AWT)
+    - name: Install and Start Xvfb
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y xvfb
+        Xvfb :99 -screen 0 1024x768x24 &
+      env:
+        DISPLAY: :99
 
     # Run Automation Tests
     - name: Run Tests
       run: mvn test
+      env:
+        DISPLAY: :99
+        VIDEO_RECORD: "no"
+        SCREENSHOT_PASSED_TCS: "yes"
+        SCREENSHOT_FAILED_TCS: "yes"
+        SCREENSHOT_SKIPPED_TCS: "no"
 
     # Install Allure CLI
     - name: Install Allure CLI
@@ -42,11 +58,10 @@ jobs:
         tar -xzf allure.tgz -C /opt
         sudo ln -s /opt/allure-2.19.0/bin/allure /usr/bin/allure
 
-    # Generate Allure Report using CLI
+    # Generate Allure Report
     - name: Generate Allure Report
       run: |
         allure generate target/allure-results -o allure-report
-        allure open allure-report
       env:
         ALLURE_RESULTS_DIR: target/allure-results
         ALLURE_REPORT_DIR: allure-report
@@ -60,7 +75,15 @@ jobs:
 
     # Upload Extent Report (if generated)
     - name: Upload Extent Report
+      if: success() || failure()
       uses: actions/upload-artifact@v3
       with:
         name: extent-report
-        path: path/to/extent/report/folder
+        path: target/extent-reports/
+
+    # Archive Surefire Reports for Debugging
+    - name: Upload Surefire Reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: surefire-reports
+        path: target/surefire-reports/
