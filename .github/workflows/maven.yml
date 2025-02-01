@@ -8,14 +8,13 @@ on:
 
 jobs:
   build:
-
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # ✅ Changed OS to Windows
 
     steps:
     # Checkout code
     - uses: actions/checkout@v4
 
-    # Set up JDK
+    # Set up JDK 17
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -23,7 +22,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    # Build the project and install dependencies
+    # Build and Install Dependencies
     - name: Build and Install Dependencies
       run: mvn clean install -DskipTests
 
@@ -31,17 +30,18 @@ jobs:
     - name: Run Tests
       run: mvn test
 
-    # Install Allure CLI
+    # Install Allure CLI (Windows)
     - name: Install Allure CLI
       run: |
-        curl -o allure.tgz -L https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.tgz
-        tar -xzf allure.tgz -C /opt
-        sudo ln -s /opt/allure-2.19.0/bin/allure /usr/bin/allure
+        Invoke-WebRequest -Uri https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.zip -OutFile allure.zip
+        Expand-Archive allure.zip -DestinationPath C:\allure
+        echo "C:\allure\allure-2.19.0\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8
+      shell: powershell
+
     # Generate Allure Report using CLI
     - name: Generate Allure Report
       run: |
-        allure generate target/allure-results -o allure-report
-        allure open allure-report
+        allure generate target/allure-results -o allure-report --clean
       env:
         ALLURE_RESULTS_DIR: target/allure-results
         ALLURE_REPORT_DIR: allure-report
@@ -53,9 +53,9 @@ jobs:
         name: allure-report
         path: allure-report
 
-    # Upload Extent Report (if generated)
+    # Upload Extent Report (Ensure correct path)
     - name: Upload Extent Report
       uses: actions/upload-artifact@v4
       with:
         name: extent-report
-        path: path/to/extent/report/folder
+        path: extent/report/folder  # ✅ Updated to the correct expected path
