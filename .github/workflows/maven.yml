@@ -1,51 +1,61 @@
-name: Automation Tests
+name: Java CI with Maven - Automation Tests
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   pull_request:
-    branches:
-      - main
+    branches: [ "main" ]
 
 jobs:
-  test:
+  build:
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    # Checkout code
+    - uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
+    # Set up JDK
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: maven
 
-      - name: Cache Maven dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-
+    # Build the project and install dependencies
+    - name: Build and Install Dependencies
+      run: mvn clean install -DskipTests
 
-      - name: Install dependencies
-        run: mvn clean install -DskipTests
+    # Run Automation Tests
+    - name: Run Tests
+      run: mvn test
 
-      - name: Run tests
-        run: mvn test
+    # Install Allure CLI
+    - name: Install Allure CLI
+      run: |
+        curl -o allure.tgz -L https://github.com/allure-framework/allure2/releases/download/2.19.0/allure-2.19.0.tgz
+        tar -xzf allure.tgz -C /opt
+        sudo ln -s /opt/allure-2.19.0/bin/allure /usr/bin/allure
+    # Generate Allure Report using CLI
+    - name: Generate Allure Report
+      run: |
+        allure generate target/allure-results -o allure-report
+        allure open allure-report
+      env:
+        ALLURE_RESULTS_DIR: target/allure-results
+        ALLURE_REPORT_DIR: allure-report
 
-      - name: Generate Allure Report
-        run: mvn allure:report
+    # Upload Allure Report as Artifact
+    - name: Upload Allure Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report
+        path: allure-report
 
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: target/allure-report
-
-      - name: Upload Extent Report
-        uses: actions/upload-artifact@v4
-        with:
-          name: extent-report
-          path: target/extent-report
+    # Upload Extent Report (if generated)
+    - name: Upload Extent Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: extent-report
+        path: path/to/extent/report/folder
