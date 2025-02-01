@@ -48,14 +48,14 @@ jobs:
 
     # Upload Allure Report as Artifact
     - name: Upload Allure Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: allure-report
         path: allure-report
 
     # Upload Extent Report (if generated)
     - name: Upload Extent Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: extent-report
         path: path/to/extent/report/folder
