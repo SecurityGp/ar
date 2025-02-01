@@ -18,9 +18,9 @@ public class P01_LoginPage extends CommonPageCRM {
     public P01_LoginPage() {super();}
 
 
-    public By inputEmail = By.xpath("//input[@id='email']");
-    public By inputPassword = By.xpath("//input[@id='password']");
-    public By buttonSignIn = By.xpath("//button[normalize-space()='Sign in']");
+    public By inputEmail = By.xpath("//input[@id='normal_login_email']");
+    public By inputPassword = By.xpath("//input[@id='normal_login_password']");
+    public By buttonSignIn = By.xpath("//span[normalize-space()='Log in']");
     public By alertErrorMessage = By.xpath("//div[@role='alert']");
     public By linkForgotPassword = By.xpath("//a[normalize-space()='Forgot password?']");
     public By linkSignUp = By.xpath("//a[normalize-space()='Sign up']");
@@ -36,7 +36,7 @@ public class P01_LoginPage extends CommonPageCRM {
         clearText(inputEmail);
         clearText(inputPassword);
         setText(inputEmail, excelHelpers.getCellData(1, SignInModel.getEmail()));
-        setText(inputPassword, DecodeUtils.decrypt(excelHelpers.getCellData(1, SignInModel.getPassword())));
+        setText(inputPassword, excelHelpers.getCellData(1, SignInModel.getPassword()));
         clickElement(buttonSignIn);
             return new P01_LoginPage();
                    }
