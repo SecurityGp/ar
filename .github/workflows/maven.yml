@@ -58,4 +58,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: extent-report
-        path: extent/report/folder  # ✅ Updated to the correct expected path
+        path: reports/ExtentReports  # ✅ Updated to the correct expected path
