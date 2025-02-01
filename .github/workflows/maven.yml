@@ -1,4 +1,4 @@
-name: Java CI with Maven - Automation Tests
+name: Windows - Automation Tests
 
 on:
   push:
