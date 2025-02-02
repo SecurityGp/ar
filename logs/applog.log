@@ -1,0 +1,132 @@
+[INFO] 01-02-2025 21:00:06 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 01-02-2025 21:00:06 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 01-02-2025 21:00:06 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 01-02-2025 21:00:06 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 01-02-2025 21:00:08 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = no
+[INFO] 01-02-2025 21:00:08 [main] [LogUtils] - Link Extent Report: C:\Users\Gnana\IdeaProjects\AssuredHealth\reports/ExtentReports\01_02_2025_21_00_08_ExtentReports.html
+[INFO] 01-02-2025 21:00:09 [main] [LogUtils] - Extent Reports is installed.
+[INFO] 01-02-2025 21:00:09 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 01-02-2025 21:00:09 [main] [LogUtils] - =====> Starting Suite: Regression Tests 
+[INFO] 01-02-2025 21:00:09 [TestNG-test-SignIn Test-1] [LogUtils] - Excel File: C:\Users\Gnana\IdeaProjects\AssuredHealth\src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:09 [TestNG-test-SignIn Test-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:12 [TestNG-test-SignIn Test-1] [LogUtils] - Row: 10 - Column: 2
+[INFO] 01-02-2025 21:00:12 [TestNG-test-SignIn Test-1] [LogUtils] - StartRow: 1 - EndRow: 6
+[INFO] 01-02-2025 21:00:25 [TestNG-PoolService-6] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:26 [TestNG-PoolService-6] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:26 [TestNG-PoolService-6] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-4] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-4] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-5] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-5] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-2] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-2] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-1] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-1] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is starting...
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-3] [LogUtils] - Set Excel File: src/test/resources/testdata/Common/ProviderData.xlsx
+[INFO] 01-02-2025 21:00:27 [TestNG-PoolService-3] [LogUtils] - Sheet Name: SignIn
+[INFO] 01-02-2025 21:00:32 [TestNG-PoolService-2] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:32 [TestNG-PoolService-4] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-6] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-3] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-5] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-4] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-2] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-6] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-1] [LogUtils] - Open website with URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-5] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-1] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-2] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-5] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-2] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:33 [TestNG-PoolService-3] [LogUtils] - Get Current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-2] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-4] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-6] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-3] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-1] [LogUtils] - Verify Contains: https://staging.withassured.com/sign-in CONTAINS sign-in
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-4] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-5] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-1] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-6] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-4] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-3] [LogUtils] - Get Page Title: Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-6] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-1] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-5] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:34 [TestNG-PoolService-3] [LogUtils] - Verify Equals: Assured = Assured
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-2] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-4] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-1] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-6] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-5] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-3] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-2] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-1] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-4] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-5] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-6] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:35 [TestNG-PoolService-3] [LogUtils] - Clear text in textbox By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-2] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-1] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-4] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-5] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-1] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-2] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-6] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:36 [TestNG-PoolService-4] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-3] [LogUtils] - Set text cashiernga01@gmail.com on By.xpath: //input[@id='normal_login_email']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-5] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-1] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-2] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-1] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-2] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-1] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-2] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-2] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (0d4ad6396b7dba9459ac1808d306b43b)
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-1] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (9612647a9ada6598ddd85ca2c70681b0)
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-6] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-4] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-4] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-4] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-4] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-4] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (4e29c49d9285f052ad17553fc747a287)
+[INFO] 01-02-2025 21:00:37 [TestNG-PoolService-3] [LogUtils] - Set text abc32 on By.xpath: //input[@id='normal_login_password']
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (441077bfad12b0a3a9bace88d3bcd2ac)
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-6] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-6] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-6] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-6] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-6] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (d1f0f437f05ba9ba6893e12cc1a759b2)
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-3] [LogUtils] - Clicked on the element By.xpath: //span[normalize-space()='Log in']
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-3] [LogUtils] - Test case: loginWithValidCredentials is passed.
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-3] [LogUtils] - No Folder: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData/Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-3] [LogUtils] - Folder created: C:\Users\Gnana\IdeaProjects\AssuredHealth\ExportData\Images
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-3] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on windows (b75c5126e8b8f7ae3c2c1dafe8e01125)
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-4] [LogUtils] - Screenshot taken: loginWithValidCredentials
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-4] [LogUtils] - Screenshot taken current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Screenshot taken: loginWithValidCredentials
+[INFO] 01-02-2025 21:00:38 [TestNG-PoolService-5] [LogUtils] - Screenshot taken current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:39 [TestNG-PoolService-6] [LogUtils] - Screenshot taken: loginWithValidCredentials
+[INFO] 01-02-2025 21:00:39 [TestNG-PoolService-6] [LogUtils] - Screenshot taken current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:39 [TestNG-PoolService-3] [LogUtils] - Screenshot taken: loginWithValidCredentials
+[INFO] 01-02-2025 21:00:39 [TestNG-PoolService-3] [LogUtils] - Screenshot taken current URL: https://staging.withassured.com/sign-in
+[INFO] 01-02-2025 21:00:44 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 01-02-2025 21:00:44 [main] [LogUtils] - =====> End Suite: Regression Tests 
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - Warning !! Can not Load All File.
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - =====> Starting Suite: Regression Test1
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 01-02-2025 21:00:46 [main] [LogUtils] - =====> End Suite: Regression Test1
